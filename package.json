@@ -1,0 +1,22 @@
+{
+  "name": "raspivid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmigo/raspivid.git"
+  },
+  "author": "dmigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmigo/raspivid/issues"
+  },
+  "homepage": "https://github.com/dmigo/raspivid#readme",
+  "dependencies": {
+    "omxcontrol": "0.0.1"
+  }
+}
