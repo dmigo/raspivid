@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dmigo/raspivid#readme",
   "dependencies": {
+    "express": "^4.14.0",
     "omxcontrol": "0.0.1"
   }
 }
