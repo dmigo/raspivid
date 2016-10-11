@@ -14,6 +14,7 @@ const play = (video, timeout) =>{
 
 app.get('/dog',  (req, res) => {
   play(`dog.mp4`, 2000)
+  res.status(200).send('OK')
 });
 
 app.listen(3000, () => {
