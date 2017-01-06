@@ -1,15 +1,13 @@
 'use strict'
 const omx = require('omxcontrol')
 const app = require('express')()
+const exec = require('child_process').exec
 
 const videoDirectory = `/home/pi/Downloads/`
+const player = `mplayer`
 const play = (video, timeout) =>{
 	console.log(`start video ${video}`)
-	omx.start(`${videoDirectory + video}`)
-	setTimeout(()=>{
-		omx.quit()
-		console.log(`close video ${video}`)
-		}, timeout)
+	exec(`${player} ${videoDirectory}${video}`)
 }
 
 app.get('/dog',  (req, res) => {
